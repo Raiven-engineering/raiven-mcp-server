@@ -1,0 +1,18 @@
+{
+  "name": "raiven",
+  "displayName": "Raiven",
+  "version": "1.0.0",
+  "description": "Work with your Raiven requests, quotes, suppliers and RFQs. Sign in with your Raiven login.",
+  "author": {
+    "name": "Raiven",
+    "email": "support@raiven.com"
+  },
+  "homepage": "https://github.com/Raiven-engineering/raiven-mcp-server",
+  "repository": "https://github.com/Raiven-engineering/raiven-mcp-server",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["raiven", "procurement", "rfq", "quotes", "suppliers", "mcp"],
+  "category": "integrations",
+  "tags": ["mcp", "procurement"],
+  "mcpServers": "./mcp.json"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "raiven",
+  "owner": {
+    "name": "Raiven",
+    "email": "support@raiven.com"
+  },
+  "metadata": {
+    "description": "Raiven procurement tools for Cursor."
+  },
+  "plugins": [
+    {
+      "name": "raiven",
+      "source": "plugins/cursor",
+      "description": "Work with your Raiven requests, quotes, suppliers and RFQs. Sign in with your Raiven login."
+    }
+  ]
+}
