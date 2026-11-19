@@ -18,10 +18,11 @@ When Cursor first connects, it opens Raiven's sign-in page. Enter your Raiven em
 | --- | --- |
 | `raiven:read` | View requests, quotes, suppliers, comparisons, purchase orders and the catalog. |
 | `raiven:write` | Create and edit RFQs, branch suppliers and supplier contacts, and prepare RFQ emails. |
+| `raiven:send` | Send prepared RFQ emails to suppliers. |
 | `raiven:mail` | Read your Raiven inbox. |
 | `offline_access` | Stay signed in between sessions. |
 
-The plugin can't place orders or email suppliers.
+Sending RFQ emails to suppliers needs the `raiven:send` permission; without it, the send tool returns an `insufficient_scope` error. The plugin can't place orders.
 
 ## MCP
 
@@ -33,7 +34,7 @@ The plugin can't place orders or email suppliers.
       "url": "https://mcp.raiven.com/mcp",
       "auth": {
         "CLIENT_ID": "PLACEHOLDER_PROD_CURSOR_CLIENT_ID",
-        "scopes": ["raiven:read", "raiven:write", "raiven:mail", "offline_access"]
+        "scopes": ["raiven:read", "raiven:write", "raiven:send", "raiven:mail", "offline_access"]
       }
     }
   }

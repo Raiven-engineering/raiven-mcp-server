@@ -33,13 +33,15 @@ Cursor asks for these permissions:
 | --- | --- |
 | `raiven:read` | View your requests, quotes, quote suppliers and contacts, quote comparisons, purchase orders, catalogs and branch suppliers. |
 | `raiven:write` | Create and edit RFQs, choose an RFQ's suppliers, add branch suppliers, add, edit and remove supplier contacts, and prepare RFQ emails. |
+| `raiven:send` | Send prepared RFQ emails to suppliers. |
 | `raiven:mail` | Read the email threads, messages and attachments in your Raiven inbox. |
 | `offline_access` | Stay signed in, so you don't have to sign in again every time access expires. |
+
+Sending RFQ emails to suppliers needs the `raiven:send` permission. If your sign-in doesn't include it, Raiven MCP refuses `raiven_send_rfq_emails` with an `insufficient_scope` error, and every other tool keeps working.
 
 ## What it can't do
 
 - It can't place orders or send purchase orders.
-- It can't email suppliers. It can prepare RFQ emails, but not send them.
 - It can't send, reply to or change email in your Raiven inbox.
 - It can't do anything you can't do in the Raiven portal, and it works only inside your organization and active branch.
 
@@ -49,6 +51,7 @@ Cursor asks for these permissions:
 | --- | --- |
 | `raiven:read` | `raiven_get_current_user`, `raiven_list_requests`, `raiven_get_request`, `raiven_list_quotes`, `raiven_get_quote`, `raiven_get_quote_suppliers`, `raiven_get_quote_supplier_contacts`, `raiven_get_quote_comparison`, `raiven_get_quote_purchase_orders`, `raiven_list_catalogs`, `raiven_search_catalog_parts`, `raiven_list_branch_suppliers` |
 | `raiven:write` | `raiven_create_rfq`, `raiven_update_rfq`, `raiven_set_rfq_suppliers`, `raiven_prepare_rfq_emails`, `raiven_create_branch_supplier`, `raiven_create_supplier_contact`, `raiven_update_supplier_contact`, `raiven_delete_supplier_contact` |
+| `raiven:send` | `raiven_send_rfq_emails` |
 | `raiven:mail` | `raiven_list_email_threads`, `raiven_get_email_thread`, `raiven_get_email_message`, `raiven_get_email_attachment` |
 
 Email content is written by other people, such as suppliers. Raiven MCP marks it as untrusted, telling the AI app to treat it as information, never as instructions.
