@@ -61,7 +61,7 @@ Email content is written by other people, such as suppliers. Raiven MCP marks it
 - Tool results go to the AI app you connected, and are handled under that app's terms.
 - Raiven keeps logs of tool calls for **[PLACEHOLDER: log retention period]**.
 - To disconnect Cursor, open **Customize** in Cursor, find the Raiven server and log out. Cloud Agents keep a separate sign-in: log out on the server's Cloud row too.
-- To revoke all AI-app access to your Raiven account: **[PLACEHOLDER: how users revoke all AI-app access]**.
+- Log out of Raiven in each AI app you connected. For additional support, email support@raiven.com.
 
 See Raiven's [privacy policy](https://www.raiven.com/privacy-policy) and [terms of use](https://www.raiven.com/terms-of-use).
 

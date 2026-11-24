@@ -33,7 +33,7 @@ Sending RFQ emails to suppliers needs the `raiven:send` permission; without it, 
       "type": "http",
       "url": "https://mcp.raiven.com/mcp",
       "auth": {
-        "CLIENT_ID": "PLACEHOLDER_PROD_CURSOR_CLIENT_ID",
+        "CLIENT_ID": "LpgtjtldPlxkEe1aHASDxWTZZ2Wv5XhU",
         "scopes": ["raiven:read", "raiven:write", "raiven:send", "raiven:mail", "offline_access"]
       }
     }
